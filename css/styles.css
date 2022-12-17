@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap');
+
+body {
+    /* background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+    background: url(https://images.wallpapersden.com/image/download/4k-beautiful-landscape-digital-art_bGhuZm6UmZqaraWkpJRmaGtrrWxrbQ.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*::selection {
+    background-color: rgba(100, 32, 135, 0.35);
+}
+
+.backgroundplayer {
+    height: 386px;
+    width: 225px;
+    margin-top: 5vh;
+    /* background: rgba(255, 255, 255, 0.30); */
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(100, 32, 135, 0.54);
+    backdrop-filter: blur( 6px );
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    justify-content: center;
+}
+
+.cover {
+    margin-top: 12px;
+}
+
+.data {
+    margin-top: 10px;
+}
+
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.previous, .playpause, .next {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    box-shadow: 0 2px 6px 0 rgba(100, 32, 135, 0.54);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: all 0.5s ease;
+}
+
+.previous:hover, .playpause:hover, .next:hover {
+    background-color: rgba(100, 32, 135, 0.1);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+h4 {
+    /* font-family: 'Fuzzy Bubbles', cursive; */
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+h5 {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+.next-track, .previous-track {
+    margin-top: 9px;
+    opacity: 0.5;
+    transition: all 0.4s ease;
+}
+
+.play-track {
+    margin-left: -3px;
+    margin-top: -6px;
+    opacity: 0.5;
+    transition: all 0.4s ease;
+    display: block;
+}
+
+.pause-track {
+    margin-left: -1px;
+    margin-top: -1px;
+    opacity: 0.5;
+    transition: all 0.4s ease;
+    display: none;
+}
+
+.audio-player {
+    margin-left: 21.5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    height: 0%;
+    width: 180px;
+    background-color: rgba(100, 32, 135, 0);
+}
+
+.timeline {
+    background: rgba(0, 0, 0, 0.5);
+    height: 10px;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 2px 10px 0 #0008;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+}
+
+.timeline .progress {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    width: 0%;
+    height: 100%;
+    transition: 0.6s;
+}
+
+.controls {
+    width: 210px;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 50px;
+    margin-left: 20px;
+}
+
+.controls > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    margin-top: -4px;
+    display: flex;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.time > * {
+    padding: 2px;
+}
+
+.volume-container {
+    width: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.volume-button {
+    height: 38px;
+    display: block;
+    align-items: center;
+}
+
+.volume {
+    transform: scale(0.7);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.volume-slider {
+    position: absolute;
+    top: 5px;
+    left: -3px;
+    z-index: -1;
+    width: 0;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 0 20px #000a;
+    transition: all 0.3s ease;
+}
+
+.volume-percentage {
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    height: 100%;
+    width: 75%;
+    transition: all 0.3s ease;
+}
+
+.volume-container:hover .volume-slider {
+    left: -123px;
+    width: 120px;
+}
+
+#cover_src {
+    border-radius: 10px;
+    object-fit: cover;
+}
