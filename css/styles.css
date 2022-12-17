@@ -4,7 +4,7 @@
 body {
     /* background: rgb(238,174,202);
     background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
-    background: url(https://images.wallpapersden.com/image/download/4k-beautiful-landscape-digital-art_bGhuZm6UmZqaraWkpJRmaGtrrWxrbQ.jpg);
+    background: url(../img/landscape.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
